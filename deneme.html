@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eczane Slayt Gösterisi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            overflow: hidden;
+        }
+        .mySlides {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+        .mySlides.active {
+            display: block;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .adres-url {
+            margin-top: 20px;
+        }
+        .adres-url a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .adres-url a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <h2>LOTUS ECZANESİ</h2>
+        <p><strong>İlçe:</strong> BEŞİKTAŞ</p>
+        <p><strong>Tel:</strong> 0 212 273 22 76</p>
+        <p><strong>Fax:</strong> 0 212 273 22 75</p>
+        <p><strong>Sgk Anlaşması:</strong> Var</p>
+        <p><strong>Adres:</strong> Ortaköy Mahallesi Dereboyu Caddesi Ambarlıdere Yolu No: 6/C Ortaköy</p>
+        <p><strong>Adres Tarifi:</strong> Lotus World</p>
+        <div class="adres-url">
+            <a href="https://maps.google.com/?q=41.05876185327720,29.02456578715160" target="_blank">Haritada Göster</a>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <h2>ÖMÜR ECZANESİ</h2>
+        <p><strong>İlçe:</strong> BEŞİKTAŞ</p>
+        <p><strong>Tel:</strong> 0 212 278 71 69</p>
+        <p><strong>Fax:</strong> -</p>
+        <p><strong>Sgk Anlaşması:</strong> Var</p>
+        <p><strong>Adres:</strong> Konaklar Mahallesi, Faruk Nafiz Çamlıbel Sokak, 7/C Levent</p>
+        <p><strong>Adres Tarifi:</strong> Köşk Taksi Durağı Karşısı, Sporcular Parkı Çaprazı, Salı pazarı bitimi</p>
+        <div class="adres-url">
+            <a href="https://maps.google.com/?q=41.087887,29.014119" target="_blank">Haritada Göster</a>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <h2>SOLEY ECZANESİ</h2>
+        <p><strong>İlçe:</strong> BEŞİKTAŞ</p>
+        <p><strong>Tel:</strong> 0 531 340 12 80</p>
+        <p><strong>Fax:</strong> -</p>
+        <p><strong>Sgk Anlaşması:</strong> Var</p>
+        <p><strong>Adres:</strong> Dikilitaş Mahallesi, Mercan Sokak, 6 Gayrettepe</p>
+        <p><strong>Adres Tarifi:</strong> Sinpaş Karşısı</p>
+        <div class="adres-url">
+            <a href="https://maps.google.com/?q=41.05618779049247,29.00841236114502" target="_blank">Haritada Göster</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000); // 5 saniyede bir geçiş
+    }
+</script>
+
+</body>
+</html>
