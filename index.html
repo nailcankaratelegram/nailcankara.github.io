@@ -3,125 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eczane Slayt Gösterisi</title>
+    <title>Nöbetçi Eczaneler</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .slideshow-container {
-            max-width: 800px;
-            position: relative;
-            margin: auto;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            overflow: hidden;
-        }
-        .mySlides {
-            display: none;
-            padding: 20px;
-            text-align: center;
-        }
-        .mySlides.active {
-            display: block;
-        }
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
-        }
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .adres-url {
-            margin-top: 20px;
-        }
-        .adres-url a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        .adres-url a:hover {
-            text-decoration: underline;
-        }
+/* Temel stil ayarları */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ekranın tamamını kapsayacak şekilde */
+    width: 100%; /* Ekranın tamamını kapsayacak şekilde */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header stil */
+.header {
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-shrink: 0; /* Header'ın boyutunun sabit kalmasını sağlar */
+}
+.header img {
+    height: 40px;
+    margin-right: 10px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Ana içerik stil */
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* İçeriğin taşmasını engeller */
+    padding: 2vh;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh; /* Tam ekran kaplaması için */
+    position: relative;
+}
+
+/* Slider'ı container içinde sabit tutalım */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+    align-items: center; /* İçeriği dikeyde ortala */
+}
+
+/* Eczane kartlarının her biri */
+.pharmacy {
+    min-width: 100%; /* Ekran genişliğini tamamen kapla */
+    min-height: 100%; /* Ekran yüksekliğini tamamen kapla */
+    box-sizing: border-box;
+    padding: 2vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Dikeyde ortala */
+    align-items: center; /* Yatayda ortala */
+    max-height: 100%; /* Taşmayı önlemek için */
+}
+
+.pharmacy h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.pharmacy p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.pharmacy img {
+    max-width: auto;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Footer stil */
+.footer {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    flex-shrink: 0; /* Footer'ın boyutunun sabit kalmasını sağlar */
+}
+
+/* Noktalar (dots) stil */
+.dots {
+    position: absolute;
+    bottom: 5vh; /* QR kodun altına konumlandır */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%; /* Ekran genişliğine göre %100 genişlik */
+}
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: gray;
+}
+
+/* Responsivlik iyileştirmeleri */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.2rem; /* Daha küçük ekranlar için başlık boyutunu küçült */
+    }
+    .pharmacy h2 {
+        font-size: 1rem;
+    }
+    .pharmacy p {
+        font-size: 0.9rem;
+    }
+    .footer {
+        font-size: 0.8rem;
+    }
+}
     </style>
 </head>
 <body>
-
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-        <h2>LOTUS ECZANESİ</h2>
-        <p><strong>İlçe:</strong> BEŞİKTAŞ</p>
-        <p><strong>Tel:</strong> 0 212 273 22 76</p>
-        <p><strong>Fax:</strong> 0 212 273 22 75</p>
-        <p><strong>Sgk Anlaşması:</strong> Var</p>
-        <p><strong>Adres:</strong> Ortaköy Mahallesi Dereboyu Caddesi Ambarlıdere Yolu No: 6/C Ortaköy</p>
-        <p><strong>Adres Tarifi:</strong> Lotus World</p>
-        <div class="adres-url">
-            <a href="https://maps.google.com/?q=41.05876185327720,29.02456578715160" target="_blank">Haritada Göster</a>
+    <div class="header">
+        <img src="e.jpg" alt="E Logo">
+        <h1>Nöbetçi Eczaneler</h1>
+    </div>
+    <div class="container">
+        <!-- Slider ve dots'ları kapsayan yeni bir konteyner ekledik -->
+        <div class="slider-container">
+            <div class="slider" id="pharmacy-list"></div>
+            <div class="dots" id="dots"></div>
         </div>
     </div>
-
-    <div class="mySlides fade">
-        <h2>ÖMÜR ECZANESİ</h2>
-        <p><strong>İlçe:</strong> BEŞİKTAŞ</p>
-        <p><strong>Tel:</strong> 0 212 278 71 69</p>
-        <p><strong>Fax:</strong> -</p>
-        <p><strong>Sgk Anlaşması:</strong> Var</p>
-        <p><strong>Adres:</strong> Konaklar Mahallesi, Faruk Nafiz Çamlıbel Sokak, 7/C Levent</p>
-        <p><strong>Adres Tarifi:</strong> Köşk Taksi Durağı Karşısı, Sporcular Parkı Çaprazı, Salı pazarı bitimi</p>
-        <div class="adres-url">
-            <a href="https://maps.google.com/?q=41.087887,29.014119" target="_blank">Haritada Göster</a>
-        </div>
-    </div>
-
-    <div class="mySlides fade">
-        <h2>SOLEY ECZANESİ</h2>
-        <p><strong>İlçe:</strong> BEŞİKTAŞ</p>
-        <p><strong>Tel:</strong> 0 531 340 12 80</p>
-        <p><strong>Fax:</strong> -</p>
-        <p><strong>Sgk Anlaşması:</strong> Var</p>
-        <p><strong>Adres:</strong> Dikilitaş Mahallesi, Mercan Sokak, 6 Gayrettepe</p>
-        <p><strong>Adres Tarifi:</strong> Sinpaş Karşısı</p>
-        <div class="adres-url">
-            <a href="https://maps.google.com/?q=41.05618779049247,29.00841236114502" target="_blank">Haritada Göster</a>
-        </div>
-    </div>
-
-</div>
-
-<script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+    <div class="footer">www.eczai.com</div>
+    <script>
+        async function fetchLocationMap() {
+            const response = await fetch('locations.json');  
+            const locationMap = await response.json();  
+            return locationMap;
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 5000); // 5 saniyede bir geçiş
-    }
-</script>
+        
+        async function fetchPharmacies() {
+            const locationMap = await fetchLocationMap();
+            
+            let locationKey = '';
+            const urlParams = new URLSearchParams(window.location.search);
+            const locationParam = urlParams.get('location');
+            
+            if (locationParam && locationMap[locationParam]) {
+                locationKey = locationParam;
+            }
+            
+            const location = locationMap[locationKey];
+            console.log(`Yükleniyor: ${location} eczaneleri`);
+            
+            const response = await fetch(`${location}.json`);
+            const data = await response.json();
+            const pharmacies = data.pharmacies;
+            const container = document.getElementById('pharmacy-list');
+            const dotsContainer = document.getElementById('dots');
+            pharmacies.forEach((pharmacy, index) => {
+                const div = document.createElement('div');
+                div.classList.add('pharmacy');
+                div.innerHTML = ` 
+                    <h2>${pharmacy.İsim}</h2>
+                    <p><strong>Adres:</strong> ${pharmacy.Adres}</p>
+                    <p><strong>Telefon:</strong> ${pharmacy.Tel}</p>
+                    <p><strong>SGK Anlaşması:</strong> ${pharmacy['Sgk Anlaşması']}</p>
+                    <p><a href="${pharmacy['Adres URL']}" target="_blank">Haritada Göster</a></p>
+                    <img src="data:image/png;base64,${pharmacy['QR Kod']}" alt="QR Kod">
+                `;
+                container.appendChild(div);
+                
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    slider.style.transform = `translateX(-${index * 100}%)`;
+                    dots.forEach(d => d.classList.remove('active'));
+                    dot.classList.add('active');
+                });
+                dotsContainer.appendChild(dot);
+            });
+            cyclePharmacies();
+        }
 
+        function cyclePharmacies() {
+            let index = 0;
+            let direction = 1;  // 1: ileri, -1: geri
+            const items = document.querySelectorAll('.pharmacy');
+            const dots = document.querySelectorAll('.dot');
+            const slider = document.getElementById('pharmacy-list');
+            
+            setInterval(() => {
+                // Geçiş yönünü kontrol et
+                index += direction;
+                
+                // Eğer son slayta ulaşıldıysa, geri dön
+                if (index === items.length) {
+                    direction = -1;
+                    index = items.length - 2; // Bir önceki slayta git
+                }
+                
+                // Eğer ilk slayta ulaşıldıysa, ileriye git
+                if (index < 0) {
+                    direction = 1;
+                    index = 1; // İkinci slayta git
+                }
+                
+                slider.style.transform = `translateX(-${index * 100}%)`;
+                
+                // Noktaların durumunu güncelle
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[index].classList.add('active');
+            }, 5000);  // Geçiş süresi (5 saniye)
+        }
+
+        fetchPharmacies();
+    </script>
 </body>
 </html>

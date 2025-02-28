@@ -1,0 +1,41 @@
+{
+    "date": "2025-02-28",
+    "pharmacies": [
+        {
+            "Tarih": "2025-02-28",
+            "İlçe": "BEŞİKTAŞ",
+            "İsim": "DEREBOYU ECZANESİ",
+            "Tel": "0 212 227 00 17",
+            "Fax": "0 212 227 28 97",
+            "Sgk Anlaşması": "Var",
+            "Adres": "Mecidiye Mahallesi, Dereboyu Caddesi, 47/A Ortaköy",
+            "Adres Tarifi": "PORTAKAL YOKUŞUNDAN İNİNCE ZÜBEYDE HANIM KIZ MESLEK LİSESİ KARŞISI, ROSSMAN YANI",
+            "Adres URL": "https://maps.google.com/?q=41.04982727307140,29.02554657182140",
+            "QR Kod": "iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADGUlEQVR4nO2cS46jMBCGvxoi9dJIfYAcxdxgjjTKkeYGcJTcAJZIjv5Z2CZ096onLcijvEIhn7BFpR6/yzHx7TH8+j4DDjnkkEMOOeTQc0JWxgGGFqwDYDKzjovlKzOzcuMh1uTQTVCUJI1APB8oxhAkBnuTdTSSJH2EtpueQ9tDU3EAZscEhIT6yUx9mE09kD3IXtNzaD8ons10asGsbWR/xiWI/PSTHHoMaGgBpjdl93C6eoaffpJDdwnV9x0ETEDsweBiEBpZHN+TAayVrDtfk0M/AA1mZtYCTAeIY6OSY+ZxyaXGXtNzaGsfsXYAYTYIswkSDG1D8SB7TM+hnSDrpqJH6NRSRAlrIVek1Ls7Tc+hDSG0DKIkCBJxbIo8QUgQR1APRbfo73xNDt0CLRaRsj9QHxJEJdQHaW0vY5Gp3CKeGvpgEar+YLnKPgIarb7sFvHMEEWdDglpbHLUyBYBVHn7Gk7cIp4d+ppHQE0XQqqZJYvfcIt4dqgGghoccvzo642sTECjGk7cIl4Emg6oD7NRcoaSODC0pcxQv3z2KGty6AYoSrJuelPZ1whzkSdKCTqb2TFh3T7Tc2h7Fbsl+wj7M16yo5DGS1YviedD3hzfa3oObV9rwLrcjCOsBatcjLoe8UJQlKTTsSSV6zFV7TqHk5uf5NCdQ7WkUNUjrle5wljpEclrjReAlqhR3v41YBQ9ompV1V7cIl4DyinEZJaLzCH3QjQq3VSAdbXj8lHW5NBNUaOmjZ/cQ1EhQnIf8SrQ0lWXMGiSAIzQyIpS+Q5MByy30mw8PYd2gqpsnVZN+JJmsy7MVhKMs3fMvAKU33L98TdJlENcQBgFUwtM7wlo6obona/JoR+AcpE5ll46oDTUXQ/0uB7xYlA90wXTW5Ywc/N1HJfSI6TP0HbTc2g/KF7bIEJCp2wM0tpoHm1NDn1jfD2xNb0nDQYQcq2RLP41NPwet5+eQ5tDn890aTjORhzbcoZj6DANR2HxfPDM8gWg9d7ntU+m7IJKdYejNGn7vsbzQ+b/TOaQQw455JBDDv0n9A879jpH73+BiAAAAABJRU5ErkJggg=="
+        },
+        {
+            "Tarih": "2025-02-28",
+            "İlçe": "BEŞİKTAŞ",
+            "İsim": "NESLİ ECZANESİ",
+            "Tel": "0 212 258 87 28",
+            "Fax": "",
+            "Sgk Anlaşması": "Var",
+            "Adres": "Abbasağa Mahallesi, Jandarma Mektebi Sokak, 34/4 Abbasağa",
+            "Adres Tarifi": "",
+            "Adres URL": "https://maps.google.com/?q=41.04975799048160,29.00477440236040",
+            "QR Kod": "iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAAC90lEQVR4nO2cQY6jMBBFXw1IWRppDpCjwM1GuRkcpQ8wklm2BPqzsA2kd93pgXQoFhFu8pSyUvlVLpfbxKev4dfnGXDIIYcccsghh14TsnzVWDeWO7MaGGtgLG/oDjHPof2hVpIUAYIEYQLCuwFgHZUkSffQfuY5tD80FgEYGgBmo42VGJrZ1EORjIPMc+gwSD2zwXiRbsUFrPsfn+TQc0L1h7HBRUaI0Go2oJrsWz7JoZ8FBUk9oB6AscY6Kq3JhKTpOPMc2hsazMysAfsTgTZCWma0bxcBc1pqHGWeQ3tHjbWUreE6oaGpEEyIESDc17qffE4OPQKRVpXtGhKo0lB9mPJTgpR0o5Wk/snn5NAjUPGIyFKUyB5BGyHVKNpSikhVCfeIV4bYVp4gf/ttBPUhi0fykiwe7hEvDuWfffrtp0rlMgRSmSq7hWvEGaBN1MirzzCVB7FKlW31qYo9uUecAOKDPOSkkhI1gJJPls0N94iXhu6iBpTgECHHiqQglbbh5Mnn5NAjEKsz5G3PdDctrjIltSiLEPeIF4fKFx+rRQpy1MhJZSyV7VauEWeAlhrURKlCVNqklyl7KL7hGnEaKG9kXKTbdcK6sV5WHbNZx2y6NceZ59BBq881j6AEjLU4BbhGnABa9jXWOvUSOmAJIsovnke8PLTpmBHMNUMHuSsi/K0ZGgwCGNRlN+zJ5+TQt0Bz6sBOonBr+LjWkOLsvdgngIpGjL9TL51BFgWGJiKYakvDbumve/I5OfQItOx95j2MjTIshct0eT3iTFDKJwlS6c4nDXP8kJTP8hxinkO7Q+uZLto4G8N1AkazTcclzN5neR4ohYRY/tq+XWSpF3usSRXNoalk3THmObQ/dH+ma7i+G0kUwpQ6tbetmD9kTg59E1T2MNLhT5bdr9G7888IaXNQB7CuZA/WBdeIM0FhaZJgNoZme7prvTvMPId2g+57sXOrVHqwPa9x35L75HNy6BHI/D+TOeSQQw455JBDX4T+AYg2WPh6ZcfRAAAAAElFTkSuQmCC"
+        },
+        {
+            "Tarih": "2025-02-28",
+            "İlçe": "BEŞİKTAŞ",
+            "İsim": "NİLGÜN ECZANESİ",
+            "Tel": "0 212 351 05 05",
+            "Fax": "0 212 351 47 24",
+            "Sgk Anlaşması": "Var",
+            "Adres": "Etiler Mahallesi Tepecik Yolu Caddesi 90/A Etiler",
+            "Adres Tarifi": "Alkent Hıllsıde Çıkış Kapısı Karşı Köşesinde",
+            "Adres URL": "https://maps.google.com/?q=41.08832796722910,29.03257269969230",
+            "QR Kod": "iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAAC+klEQVR4nO2cy43bMBBA34QGfKQBF7ClUB2kppSUDqRSXMAC1HEBCpMDP5J2kwALb2TFGh4MitKDSXA8nJ8syqfb8O3zDBhkkEEGGWSQQc8JSWknYCy9ejmPiUj3kOkZtD0UVFU1gnQ4BZ8An5COMqaqqmtou+kZtB1E3ukQgRCdgi+XqprQ3idUo1PAaZacfudrMuhLoRAn0R8XpwxyVhhPSPdPvsmgXUKnd9c6SOv7V/l9tGLnazLoHqhKhFdgBPCx3XQq4JIALGVj52sy6B6oSETRDA4Jt1OSEK+5R/h5BZhkCe18TQbdA2WJWCiA4SUB/k0UUh3069Nj52sy6B6o+hrZ+6y+RvE+2xhOta8Pm6/x1FDZZI2wEIugieKC1huLh00inhmqEqEp776qJgia0L7GpbTPMYp2ufM1GXQPVE6NfEJoWo7lqJU2YwKTiCNAVSJwxXgMEYrNEF0+Tqq2SHZqHABqdkSxHooctAB2n59yS1PDJOKZofqz9zWNlfe89TQWNwO86YjDQV6VQUSKC8ok0vmEdD5BuJ1VukdOz6AtoOZrVP+y97PKcFVH1PCEnRpHgUQuk9SCiEmASVTjJAwvb0K4nVX7UWQFbTc9g7bPa4R+QhnPCqASbifAp1POhgNima6DQC0eMcelgFwdE1cfFo84BrTIazCnL3pWRVMtiGV2xPNDTSLSqoxOS51laRbFPg7UItZO59RWURRNDixmeSBorSNqhqNvZsWcIc9CYxLx7NAq0xXhnbaYE+GzRWEScQAo736OWV4gmxDDS4LhMkkRi9He4DkClOMRNfTkkg7fX4Xh8oqEW6nOh/GaAFctzZ2vyaAvgEpWi5wNJ8eqFr5GguEC0j1megY9wNeApV8R6+3ZjihFNWZHHA6qmqHUR4wiZczsiGNCIUJJf7devjHX1/1vazLoE+3jO11MJ2W81kq78YLCBGVs2+kZtDnU6iyBZbGl08X7Grn20mqoDgH94V3fvzb7ZzKDDDLIIIMMMgjgF1acoOChBhEgAAAAAElFTkSuQmCC"
+        }
+    ]
+}
